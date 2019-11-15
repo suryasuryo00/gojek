@@ -48,7 +48,7 @@ if ($register == false)
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : GOFOODSANTUY19 !\n";
+                echo "\e[93m[!] Trying to redeem Voucher : GOFOODSANTAI19 !\n";
                 sleep(3);
                 goto ride;
             }
@@ -57,7 +57,7 @@ if ($register == false)
             if ($claim == false) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : GOFOODSANTAI19 !\n";
+                echo "\e[93m[!] Trying to redeem Voucher : GOFOODBOBA19 !\n";
                 sleep(3);
                 goto next1;
             }
