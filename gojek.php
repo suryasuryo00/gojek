@@ -16,7 +16,7 @@ echo "\n";
 echo "\e[96m[?] Masukkan Nomor HP Anda (62/1) : ";
 $nope = trim(fgets(STDIN));
 $register = register($nope);
-if ($register == false)
+if ($register == true)
     {
     echo "\e[91m[x] Nomor Telah Terdaftar\n";
     }
@@ -26,7 +26,7 @@ if ($register == false)
     echo "\e[96m[!] Masukkan Kode Verifikasi (OTP) : ";
     $otp = trim(fgets(STDIN));
     $verif = verif($otp, $register);
-    if ($verif == false)
+    if ($verif == true)
         {
         echo "\e[91m[x] Kode Verifikasi Salah\n";
         goto otp;
